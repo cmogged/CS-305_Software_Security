@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ssl-server
+
+server:
+  port: 8443
+  ssl:
+    key-store: classpath:keystore.jks
+    key-store-password: password123
+    keyStoreType: JKS
+    key-alias: selfsigned
